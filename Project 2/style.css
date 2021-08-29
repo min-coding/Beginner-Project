@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
+
+body{
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+  margin: 0;
+  background-color: #7f8fa6;
+}
+
+form{
+  background-color: grey;
+  max-width: 450px;
+  margin: 0 auto;
+  padding: 30px
+  
+}
+
+
+.form-control{
+  margin-bottom: 40px;
+  text-align: left;
+}
+
+.form-control label{
+  display: block;
+  margin-bottom: 10px;
+  
+}
+
+.form-control input, .form-control select, .form-control textarea {
+ 
+  border: 1px solid #777;
+  border-radius: 3px;
+  padding: 8px;
+  display: block;
+  width: 100%;  
+  
+}
+
+.form-control input[type="radio"]{
+  width: auto;
+  display:inline-block;
+ 
+}
+
+.form-control input[type="checkbox"]{
+  width: auto;
+  display:inline-block;
+ 
+  
+}
+
+button{
+  width: 100%;
+  padding: 10px;
+  border-radius: 8px;
+  background-color: #7ed6df;
+  box-shadow: 10px 10px 5px rgba(0, 0, 0, 0.3);
+}
+
+
+
+
+

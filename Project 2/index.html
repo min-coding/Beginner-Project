@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Survey form</title>
+</head>
+<body>
+    <div>
+    <h1 id="title"> freeCodeCamp Survey form </h1>
+    <p id=description> Thank you for taking your time to help us improve the platform </p>  
+    </div>
+    
+    <div class="form-container">
+    <form id="survey-form" action="freecodecamp.org"> 
+      
+      <div class="form-control">
+      <label for="name" id="name-label" >Name </label>   
+      <input id="name"  type="text" placeholder="Enter your name" required> 
+      </div>
+               
+      
+      <div class="form-control">
+      <label for="email" id="email-label" >Email </label>
+        <input id="email" type="email" placeholder="Enter your Email" required>  
+       </div>
+      
+      
+      <div class="form-control">
+      <label for="number" id=number-label >Age (optional) </label>
+      <input id="number" type="number" placeholder="Enter your age" min="18" max="80"> 
+      </div>
+      
+             
+        <!-- This should be a drop down -->
+      <div class="form-control">
+      <label for="dropdown" id="current-role" > Which option best describe your current role?  </label>
+      <select id="dropdown">
+        <option value="student"> Student </option>
+        <option value="Full time job"> Full time job </option>
+        <option value="Part time job"> Part time job </option>
+        <option value="Other"> Other </option>
+      </select>  
+      </div>
+       
+         
+        
+       <!-- This should be a radio -->
+      
+        <div class="form-control">
+          <label> Would you recommend freeCodeCamp to a friend?</label>
+        
+        <label for="Definitely"> <input type="radio" value="Definitely" id="Definitely" name=RadioRecommend> Definitely </label>
+        
+      <label for="Maybe"> <input type="radio" value="Maybe" id="Maybe" name=RadioRecommend> Maybe </label>
+        
+      <label for="Not sure "> <input type="radio"  id="Not sure" value="Not sure" name=RadioRecommend> Not sure </label>
+      
+          </div>
+      
+      <!-- This should be a drop down -->
+      <div class="form-control">
+      <label for="dropdown" id="favorite-feature"> What is your favorite feature of freeCodeCamp to a friend? </label>
+      <select id="dropdown" placeholder="Select an option" >
+        <option value="Challenges"> Challenges </option>
+        <option value="Projects"> Projects </option>
+        <option value="Community"> Community</option>
+      </select>    
+      </div>
+      
+       <!-- This should be a checkbox -->
+        
+        <div class="form-control">
+        <p>What would you like to see improve? (Checked that all applied)</p>
+    
+      <label for="Front Ends project">
+        <input id="Front Ends project" value="Front Ends project" type="checkbox" name="improvement"> Front Ends project </label>
+  
+      <label for="Back Ends project">
+        <input id="Back Ends project" value="Back Ends project" type="checkbox" name="improvement"> Back Ends project </label>
+      
+      <label for="Full Stack project">
+        <input id="Full Stack project" value="Full Stack project" type="checkbox" name="improvement"> Full Stack project </label>
+       </div>
+      
+      <!-- This should be a textarea-->
+       <div class="form-control">
+         <p>Any comment or suggestions</p>
+         <textarea placeholder="Enter your comment here" ></textarea>
+       </div>
+      
+      <!-- This should be a submit button -->
+      <button id="submit" type="submit" value="submit" >Submit </button>
+    </form>  
+    </div>
+</body>
+</html>
